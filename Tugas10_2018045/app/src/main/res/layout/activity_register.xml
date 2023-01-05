@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:backgroundTint="@color/white"
+    tools:context=".RegisterActivity">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ndiyo"
+        android:textSize="60sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/montez_regular"/>
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/signinusernameEditText"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Sign Up "
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/signUpnameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:inputType="textPersonName"
+        android:background="@color/white"
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/signUpusernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="username"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/signiUpEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:inputType="textEmailAddress"
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/signUppasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:inputType="textPassword"
+        android:textSize="15sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/SignUpbuttonid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/swipeLeft"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="60dp"
+            android:text="Register"
+            android:background="@drawable/bg_button"
+            android:textColor="@android:color/white" />
+        <ImageButton
+            android:id="@+id/SigninHerebuttonid"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_above="@id/swipeLeft"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/swipeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Sign In"
+            android:textSize="17sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+</LinearLayout>
